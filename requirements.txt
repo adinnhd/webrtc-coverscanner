@@ -1,0 +1,6 @@
+streamlit>=1.25
+opencv-python
+Pillow
+easyocr
+numpy
+streamlit-webrtc

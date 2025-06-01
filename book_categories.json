@@ -1,0 +1,282 @@
+[
+  {
+    "category_name": "01-Pemrograman Komputer",
+    "rack_id": "RK01",
+    "keywords": [
+      "pemrograman",
+      "python",
+      "java",
+      "kode",
+      "algoritma",
+      "software",
+      "developer",
+      "javascript",
+      "c++",
+      "c#",
+      "html",
+      "css",
+      "php",
+      "ruby",
+      "swift",
+      "kotlin",
+      "typescript",
+      "sql",
+      "database",
+      "debugging",
+      "framework",
+      "backend",
+      "frontend",
+      "web",
+      "mobile",
+      "app",
+      "data structures"
+    ]
+  },
+  {
+    "category_name": "02-Fiksi / Sastra",
+    "rack_id": "RK02",
+    "keywords": [
+      "novel",
+      "cerpen",
+      "fiksi",
+      "puisi",
+      "roman",
+      "drama",
+      "sastra",
+      "antologi",
+      "kumpulan cerita",
+      "dongeng",
+      "legenda",
+      "mitologi",
+      "fantasi",
+      "sci-fi",
+      "thriller",
+      "misteri",
+      "petualangan",
+      "old man",
+      "sea",
+      "the art of war",
+      "diary",
+      "teacher",
+      "keder",
+      "proses kreatif dan dunia lain",
+      "the",
+      "art",
+      "of",
+      "war",
+      "seporsi",
+      "mie",
+      "ayam",
+      "sebelum",
+      "mati",
+      "dompet",
+      "ayah",
+      "sepatu",
+      "ibu"
+      
+    ]
+  },
+  {
+    "category_name": "03-Sains & Matematika",
+    "rack_id": "RK03",
+    "keywords": [
+      "sains",
+      "matematika",
+      "fisika",
+      "kimia",
+      "biologi",
+      "astronomi",
+      "kalkulus",
+      "statistik",
+      "aljabar",
+      "geometri",
+      "logika",
+      "ilmiah",
+      "penelitian",
+      "eksperimen",
+      "teori",
+      "rumus",
+      "evolusi",
+      "genetika",
+      "ekologi",
+      "kartun statistik"
+    ]
+  },
+  {
+    "category_name": "04-Sejarah & Biografi",
+    "rack_id": "RK04",
+    "keywords": [
+      "sejarah",
+      "biografi",
+      "peradaban",
+      "kerajaan",
+      "tokoh",
+      "memoar",
+      "arkeologi",
+      "kuno",
+      "abad pertengahan",
+      "modern",
+      "perang",
+      "revolusi",
+      "kemerdekaan",
+      "pahlawan",
+      "kehidupan"
+    ]
+  },
+  {
+    "category_name": "05-Bisnis & Ekonomi",
+    "rack_id": "RK05",
+    "keywords": [
+      "bisnis",
+      "ekonomi",
+      "manajemen",
+      "investasi",
+      "pemasaran",
+      "keuangan",
+      "wirausaha",
+      "akuntansi",
+      "strategi",
+      "pasar",
+      "saham",
+      "globalisasi",
+      "entrepreneur",
+      "startup",
+      "kepemimpinan",
+      "negosiasi",
+      "psychology of money",
+      "psychology",
+      "of",
+      "money"
+    ]
+  },
+  {
+    "category_name": "06-Pengembangan Diri",
+    "rack_id": "RK06",
+    "keywords": [
+      "motivasi",
+      "inspirasi",
+      "produktifitas",
+      "kebiasaan",
+      "psikologi",
+      "sukses",
+      "self-help",
+      "mindfulness",
+      "kebahagiaan",
+      "komunikasi",
+      "karir",
+      "tujuan",
+      "potensi diri",
+      "kesehatan mental",
+      "berani",
+      "tidak",
+      "disukai",
+      "grit",
+      "kekuatan",
+      "passion",
+      "kegigihan"
+      
+    ]
+  },
+  {
+    "category_name": "07-Seni & Desain",
+    "rack_id": "RK07",
+    "keywords": [
+      "seni",
+      "desain",
+      "lukisan",
+      "patung",
+      "fotografi",
+      "musik",
+      "arsitektur",
+      "grafis",
+      "mode",
+      "kriya",
+      "estetika",
+      "kreativitas",
+      "seniman",
+      "pertunjukan"
+    ]
+  },
+  {
+    "category_name": "08-Kesehatan & Kebugaran",
+    "rack_id": "RK08",
+    "keywords": [
+      "kesehatan",
+      "kebugaran",
+      "nutrisi",
+      "diet",
+      "olahraga",
+      "medis",
+      "penyakit",
+      "pengobatan",
+      "yoga",
+      "resep sehat",
+      "gizi",
+      "anatomi",
+      "fisiologi"
+    ]
+  },
+  {
+    "category_name": "09-Pengetahuan Sosial",
+    "rack_id": "RK09",
+    "keywords": ["retorika", "politik", "ekonomi", "sosiologi", "berbicara"]
+  },
+  {
+    "category_name": "10-Travel & Pariwisata",
+    "rack_id": "RK10",
+    "keywords": [
+      "travel",
+      "pariwisata",
+      "panduan perjalanan",
+      "destinasi",
+      "petualangan",
+      "wisata",
+      "budaya",
+      "kuliner",
+      "backpacker",
+      "liburan",
+      "negara",
+      "kota"
+    ]
+  },
+  {
+    "category_name": "11-Bahasa",
+    "rack_id": "RK11",
+    "keywords": [
+      "Bahasa",
+      "Bahasa Indonesia",
+      "Bahasa Inggris",
+      "Bahasa Jepang",
+      "Bahasa Mandarin",
+      "Bahasa Sunda",
+      "Bahasa Sunda",
+      "Bahasa Sunda",
+      "Bahasa Sunda",
+      "Bahasa Sunda"
+    ]
+  },
+  {
+    "category_name": "12-Anak-Anak",
+    "rack_id": "RK12",
+    "keywords": [
+      "anak",
+      "dongeng",
+      "cerita anak",
+      "bergambar",
+      "mewarnai",
+      "pendidikan anak",
+      "balita",
+      "remaja awal"
+    ]
+  },
+  {
+    "category_name": "06-Pengembangan Diri",
+    "rack_id": "RK06",
+    "keywords": ["jika", "kita", "tak", "pernah", "jadi", "apa-apa", "alvin", "syahrin"]
+  },
+  {
+    "category_name": "06- Pengembangan Diri",
+    "rack_id": "RK06",
+    "keywords": ["berani", "tidak", "disukai"]
+  }
+]
