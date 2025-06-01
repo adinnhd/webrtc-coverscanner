@@ -4,3 +4,5 @@ Pillow
 easyocr
 numpy
 streamlit-webrtc
+fastapi
+uvicorn[standard]

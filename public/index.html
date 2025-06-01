@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Webcam OCR</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f4; color: #333; }
+            #container { display: flex; flex-direction: column; align-items: center; }
+            #videoContainer { display: flex; justify-content: center; margin-bottom: 20px; }
+            video { border: 2px solid #333; border-radius: 8px; }
+            #controls { margin-bottom: 20px; }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                color: white;
+                background-color: #007bff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 5px;
+            }
+            button:hover { background-color: #0056b3; }
+            #results {
+                margin-top: 20px;
+                padding: 15px;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                width: 80%;
+                max-width: 600px;
+            }
+            #results h3 { margin-top: 0; }
+            #loading { display: none; margin-top: 10px; }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Realtime Book Cover Scanner (FastAPI on Vercel)</h1>
+            <p>Arahkan sampul buku ke webcam dan tekan tombol 'Scan Sampul Buku'.</p>
+            <div id="videoContainer">
+                <video id="video" width="640" height="480" autoplay></video>
+            </div>
+            <div id="controls">
+                <button id="startButton">Start Webcam</button>
+                <button id="scanButton" disabled>Scan Sampul Buku</button>
+            </div>
+            <div id="loading">Memproses OCR...</div>
+            <div id="results" style="display:none;">
+                <h3>Hasil Pemindaian:</h3>
+                <p><strong>Teks yang Diekstrak:</strong> <span id="extractedText"></span></p>
+                <p><strong>Prediksi Kategori Buku:</strong> <span id="bookCategory"></span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html> 
