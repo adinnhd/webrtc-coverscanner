@@ -3,6 +3,7 @@ import uvicorn # Keep for local testing if needed, but Vercel handles server
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware # For local testing if frontend is on different port
 from pydantic import BaseModel
+# ocr_utils will be in the same directory in the Vercel environment
 from ocr_utils import perform_ocr, categorize_book
 import numpy as np
 import base64

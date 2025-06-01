@@ -4,6 +4,10 @@ import json
 import tempfile
 import os
 
+# Construct the absolute path to the directory containing this script
+_CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+_BOOK_CATEGORIES_FILE = os.path.join(_CURRENT_DIR, "book_categories.json")
+
 # Inisialisasi Reader hanya sekali
 reader = easyocr.Reader(['en', 'id'])
 
@@ -29,7 +33,7 @@ def perform_ocr(image_input):
     extracted_text = " ".join([text for (_, text, _) in results])
     return extracted_text
 
-def get_category_info(category_name, categories_file="book_categories.json"):
+def get_category_info(category_name, categories_file=_BOOK_CATEGORIES_FILE):
     """Mendapatkan informasi kategori (termasuk rack_id) berdasarkan nama kategori."""
     try:
         with open(categories_file, 'r', encoding='utf-8') as f:
@@ -43,7 +47,7 @@ def get_category_info(category_name, categories_file="book_categories.json"):
         print("Error: Format File Kategori Salah")
     return None
 
-def categorize_book(text, categories_file="book_categories.json"):
+def categorize_book(text, categories_file=_BOOK_CATEGORIES_FILE):
     text_lower = text.lower()
     if not text_lower.strip():
         return "Kategori Tidak Dapat Ditentukan (Tidak ada teks)", None
@@ -52,7 +56,7 @@ def categorize_book(text, categories_file="book_categories.json"):
         with open(categories_file, 'r', encoding='utf-8') as f:
             categories_data = json.load(f)
     except FileNotFoundError:
-        return "Error: File Kategori Tidak Ditemukan", None
+        return f"Error: File Kategori Tidak Ditemukan di {os.path.abspath(categories_file)}", None
     except json.JSONDecodeError:
         return "Error: Format File Kategori Salah", None
 
@@ -65,7 +69,7 @@ def categorize_book(text, categories_file="book_categories.json"):
             max_score = current_score
             best_match_category = category_info.get("category_name", "Nama Kategori Tidak Ada")
 
-    category_details = get_category_info(best_match_category)
+    category_details = get_category_info(best_match_category, categories_file=categories_file)
     rack_id = category_details.get("rack_id") if category_details else None
 
     return best_match_category if max_score > 0 else "Kategori Tidak Diketahui (Tidak ada kata kunci cocok)", rack_id
